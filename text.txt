@@ -1,0 +1,12 @@
+<div class="mb-3">
+<select class="form-select" id="choice_category" aria-label="Default select example" name="category" onchange="selectCategory()">
+<option selected>Pilih kategori</option>
+<?php foreach ($category as $c) : ?>
+<option value="<?= $c['category']; ?>"><?= $c['category']; ?></option>
+<?php endforeach; ?>
+</select>
+</div>
+<div class="mb-3">
+<label for="category" class="form-label">Kategori</label>
+<input type="text" class="form-control" id="category" disabled>
+</div>
